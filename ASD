@@ -1,0 +1,56 @@
+Options -indexes
+RewriteBase /firstPhpSite/index/
+RewriteEngine On
+RewriteRule ^index$ index.php [NC]
+RewriteRule ^admin$ admin.php [NC]
+RewriteRule  ^panel$ panel.php [NC] 
+
+
+
+<?php
+  session_start();
+  ob_start();
+
+  if(empty($_SESSION["user"]))
+  {
+    header("Location: ./exit.php");
+  }
+  else
+  {
+      include("connection.php");
+  }
+?>
+<table id="customers">
+  <tr>
+    <th>Name Surname</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Subject</th>
+    <th>Message</th>
+  </tr>
+  <?php
+$select="SELECT * FROM contact";
+
+$result=$connect->query($select); 
+if($result->num_rows>0){
+ while($get=$result->fetch_assoc()){
+    echo  "
+    <tr>
+    <td>".$get['nameSurname']."</td>
+    <td>".$get['phone']."</td>
+    <td>".$get['email']."</td>
+    <td>".$get['subject']."</td>
+    <td>".$get['message']."</td>
+  </tr>";
+    
+ }
+}
+else 
+{
+  echo "<script>alert('No recorded data found.')</script>";
+}
+
+
+     
+?>
+</table>

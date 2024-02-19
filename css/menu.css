@@ -1,0 +1,523 @@
+/* :root {
+   --background: #533636;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+ 
+ body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+     }
+     a{
+        text-decoration: none;
+     }
+
+ #menu{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 50px;
+    padding-inline-end: 200px;
+    align-items: center;
+    background-color: rgb(132, 135, 136);
+    
+ }
+ #logo a{
+    font-size: 2.4rem;
+    color: white;
+    margin-inline-start: 50px;
+    transition: all 1s ease-in;
+    text-transform: uppercase;
+ }
+ #logo :hover{
+    transition: all;
+    opacity: calc(85%);
+ }
+ nav{
+   display: flex;
+   gap: 30px;
+ }
+ .button{
+   padding: 4px;
+   padding-bottom: 1px;
+   padding-inline: 7px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 2rem;
+    max-width: 160px; 
+    width: 100%; 
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ;
+ }
+ .button:hover {
+   color: #07090f;
+}
+.button svg {
+   height: 40px;
+   left: 0;
+   top: 0; 
+   position: absolute;
+   width: 100%; 
+}
+.button rect {      
+   fill: none;
+   stroke: #fff;
+   stroke-width: 4;
+   stroke-dasharray: 450, 0;
+   transition: all 0.5s linear;
+}
+.button:hover rect {
+   stroke-width: 5;
+   stroke-dasharray: 20, 300;
+   stroke-dashoffset: 48;
+   stroke: #4d4e52;
+   transition: all 2s cubic-bezier(
+       0.22, 1, 0.25, 1
+   );
+}
+
+
+ 
+  */
+  :root {
+   --background: #533636;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+#menu {
+   position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   padding-inline: 50px;
+   padding-inline-end: 200px;
+   align-items: center;
+   background-color: rgb(255, 255, 255);
+}
+
+#logo a {
+   font-size: 2.4rem;
+   color: rgb(0, 0, 0);
+   margin-inline-start: 50px;
+   transition: all 1s ease-in;
+   text-transform: uppercase;
+}
+
+#logo :hover {
+   transition: all;
+   opacity: 0.7;
+}
+
+#nav {
+   display: flex;
+   gap: 30px;
+}
+
+.icon{
+}
+#hamburgerOn{
+   display: none;
+   align-items: center;
+   color: #fff;
+   font-size: 2rem;
+}
+#hamburgerOff {
+   display: none;
+   align-items: center;
+   color: #fff;
+   font-size: 2rem;
+}
+.button {
+   padding: 4px;
+   padding-bottom: 1px;
+   padding-inline: 7px;
+   display: flex;
+   gap: px;
+   align-items: center;
+   color: #0c0b0b;
+   cursor: pointer;
+   font-size: 1rem;
+   line-height: 2rem;
+   max-width: 160px;
+   width: 100%;
+   letter-spacing: 0.2rem;
+   font-weight: 600;
+   position: relative;
+   text-transform: uppercase;
+   justify-content: center;
+   transition: all 1s;
+}
+
+.button:hover {
+   color: #07090f;
+}
+
+.button svg {
+   height: 40px;
+   left: 0;
+   top: 0;
+   position: absolute;
+   width: 100%;
+}
+
+.button rect {
+   fill: none;
+   stroke: #fff;
+   stroke-width: 4;
+   stroke-dasharray: 450, 0;
+   transition: all 0.5s linear;
+}
+
+.button:hover rect {
+   stroke-width: 5;
+   stroke-dasharray: 20, 300;
+   stroke-dashoffset: 48;
+   stroke: #4d4e52;
+   transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+#home{
+   background-color: gray;
+   height: 600px;
+   background-image: url("../img/rp.jpg");
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+#black{
+    height: 600px;
+    background-color: black;
+    opacity: 0.4;
+}
+#content{
+   color: white;
+   position: absolute;
+   top: 30%;
+   left: 10%;
+   font-size: 18px;
+}
+#about{
+color: white;
+background-image: url("../img/rp7.JPG");
+padding: 50px;
+text-align: center;
+text-transform: capitalize;
+font-weight: 600;
+}
+h3{
+   position: relative;
+   right: 500px;
+   margin-top: 50px;
+  font-size: 55px;
+  color: #07090f;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black ;
+}
+.about-h3{
+   color: white;
+}
+.container  {
+   width: 1200px;
+   height: auto;
+   margin: auto;
+}
+#left {
+   float: left;
+   border-right: 3px solid rgb(240, 240, 240);
+   font-size: 30px;
+   width: 400px;
+}
+#h5-left{
+ line-height: 1.6;
+ font-size: 22px;
+ font-weight: 600;
+}
+#h5-left #right{
+   margin: 0%;
+   padding:0% ;
+   margin-top: 20px;
+}
+span{
+   margin-top: 10px;
+   font-size: 50px;
+   margin-right: 1px;
+   line-height: 42px;
+   color: #fafafa;
+   font-weight: 600;
+   float: left;
+}
+#right{
+   margin-top: 10px;
+   float: right;
+   width: 780px;
+   color: #c2b9b9;
+   letter-spacing: 1px;
+   text-align: center;
+   font-size:15px ;
+   line-height: 1.8;
+   font-weight: 100;
+}
+.img-fluid{
+   max-width: 100%;
+   height: auto; 
+}
+.mt100{
+   margin-top: 100px;
+   border-radius: 20px;
+}
+#p-end{
+   color: #c2b9b9;
+   font-size:15px ;
+   line-height: 1.8;
+   letter-spacing: 1px;
+   margin-top: 35px;
+   font-weight: 100;
+}
+#educations{
+   background-color: white;
+   padding: 50px;
+   text-align: center;
+   height: 700px;
+}
+.card{
+   background-image: url("../img/rp7.jpg");
+  width: 350px;
+  height: 380px;
+  border: 3px solid #ddd;
+  padding: 0%;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: all 0.2s linear;
+}
+.card:hover{
+   border: 3px solid black;
+   scale: 105%;
+   
+}
+.card-title{
+   font-size: 15px;
+   color: #07090f;
+}
+.card-p{
+   color: #c2b9b9;
+}
+#team{
+   background-image:url("../img/rp6.jpg") ;
+   color: white;
+   padding: 50px;
+   height: 730px;
+   text-align: center;
+}
+#team-h3{
+   color: white;
+}
+.colums-left-right{
+   width: 385px;
+   float: left;
+   padding: 50px;
+}
+.radius1{
+   border-radius:  50%;
+   border: 5px solid white;
+   transition: all 0.2s ease-in;
+}
+.radius1:hover{
+   scale: 105%;
+}
+.names{
+   font-size: 25px;
+   margin-bottom: 5px;
+}
+.team-p{
+   color: #999;
+   font-weight: 100;
+   letter-spacing: 1px; 
+   font-size: 12px;
+} 
+ 
+#team a:hover{
+   color:gray;
+}
+.social{
+   color:white;
+   gap: 5px;
+   padding: 4px;
+   margin: 5px;
+}
+#contact{
+   background-image: url("../img/rp5.jpg");
+   background-size: cover;
+   height: auto;
+   text-align: center;
+   padding: 70px;
+}
+#contact-h3{
+ position: relative;
+ right: 400px;
+ color: white;
+}
+
+#box{
+ background:rgba(0, 0, 0, 0.7);
+ padding: 30px 20px;
+ border-radius: 25px;
+ margin-bottom: 50px;
+ height: 700px;
+ width: auto;
+   }
+   #form{
+      width:  700px;
+      float: left;
+      height: 500px;
+      text-align: left;
+      margin-right: 25px;
+   }
+   #left-form{
+      width: 50%;
+      float: left;
+      padding-right: 5px;
+   }
+   #right-form{
+      width: 50%;
+      float: right; 
+      padding-left: 5px;
+   }
+   .input-{
+       width: 100%;
+       padding:10px ;
+       line-height: 1.5;
+       color: black  ;
+       background-color: white;
+       margin: 10px;
+       border-radius: 5px;
+       border: 1px solid  grey;
+   }
+   #address{
+      color: white; 
+      line-height: 1.5;
+        letter-spacing: 1.5px;
+      padding: 30px;
+      text-align: right;
+   }
+   .p-{
+      color: #bebaba;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+   }
+   textarea{
+      font-family: Arial, Helvetica, sans-serif;
+   }
+ .hover{
+   background-color: rgb(245, 242, 242);
+   width: 100px;
+   height: 50px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+   font-weight: 600;
+   letter-spacing: 0.2rem;
+   border: 2px solid white;
+   border-radius: 16px;
+   margin-left: 10px;
+   margin-top: 10px;
+ }
+ .hover:hover{
+    width: 150px;
+    color: white;
+    background-color: #07090f;
+ }
+ #footer{
+   background-image: url("../img/rp7.JPG");
+   color: white;
+   padding: 50px;
+   text-align: center;
+ }
+ @keyframes jump {
+   0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+   100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+ }
+ .animate{
+   transform-origin: 50% 50%;
+   animation: jump 0.9s linear alternate infinite;
+   font-size: 15px;
+   padding: 7px 12px;
+ }
+  
+
+/* Mobil cihazlar için stiller */
+@media only screen and (max-width: 768px) {
+   #menu {
+       height: 60px;
+       padding-inline: 20px;
+       padding-inline-end: 40px;
+   }
+
+   #logo a {
+       font-size: 1.8rem;
+       margin-inline-start: 20px;
+   }
+
+   #nav {
+       display: none;
+   }
+   #hamburgerOn{
+      display: flex;
+   }
+ 
+   .button {
+       padding: 8px;
+       padding-bottom: 3px;
+       padding-inline: 12px;
+       gap: 15px;
+       font-size: 0.9rem;
+       line-height: 1.8rem;
+       max-width: 140px;
+       letter-spacing: 0.2rem;
+   }
+
+   .button svg {
+       height: 30px;
+   }
+
+   .button rect {
+       stroke-width: 2;
+       stroke-dasharray: 250, 0;
+   }
+
+   .button:hover rect {
+       stroke-width: 3;
+       stroke-dasharray: 15, 200;
+       stroke-dashoffset: 30;
+   }
+}
+
